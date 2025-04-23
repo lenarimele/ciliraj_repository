@@ -1,0 +1,269 @@
+<!--
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čili Raj</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+     
+  <header class="container-fluid bg-danger text-white py-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <img src="čiliraj slikovni.png" alt="LOGO" class="img-fluid me-3" style="height: 60px;">
+      <div class="d-flex align-items-center gap-3">
+        <input type="text" placeholder="Išči" class="form-control form-control-sm">
+  
+        <button class="btn btn-outline-light btn-sm rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+        </button>
+  
+        <button class="btn btn-outline-light btn-sm rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6z"/>
+          </svg>
+        </button>
+
+        <button class="btn btn-outline-light btn-sm rounded navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarChili">
+            <span class="navbar-toggler-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    
+  
+  
+    <div class="collapse navbar-collapse bg-danger text-white text-center" id="navbarChili">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Domov</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Izdelki</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">O nas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+</header>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+  .product-card {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  .product-img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+<a class="navbar-brand" href="#"><img src="your-logo.png" alt="Logo" class="logo"></a>
+<div class="ms-auto d-flex align-items-center gap-3">
+  <a href="#" class="text-white"><i class="bi bi-house"></i></a>
+  <a href="#" class="text-white"><i class="bi bi-search"></i></a>
+  <a href="#" class="text-white"><i class="bi bi-cart"></i></a>
+  <a href="#" class="text-white"><i class="bi bi-person-circle"></i></a>
+  <a href="#" class="text-white"><i class="bi bi-list"></i></a>
+</div>
+</nav>
+
+<div class="container mt-4">
+<div class="row row-cols-1 row-cols-sm-2 g-3">
+
+  <div class="col">
+    <div class="product-card">
+      <img src="slike_izdelki/cili_pekoca_omaka.jpg" class="img-fluid product-img" alt="Chili Sauce">
+      <div>Pekoča omaka</div>
+      <div>3,99</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="product-card">
+      <img src="slike_izdelki/cili_v_prahu.jpg" class="img-fluid product-img" alt="Chili Powder">
+      <div>Čili v prahu</div>
+      <div>2,49</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="product-card">
+      <img src="slike_izdelki/posusen_cili.jpg" class="img-fluid product-img" alt="Dried Chili">
+      <div>Posušen čili</div>
+      <div>4,00</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="product-card">
+      <img src="slike_izdelki/vlozen_cili.jpg" class="img-fluid product-img" alt="Pickled Chilies">
+      <div>Vloženi čili</div>
+      <div>3,25</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="product-card">
+      <img src="slike_izdelki/cili_olje.jpg" class="img-fluid product-img" alt="Chili Oil">
+      <div>Čili olje</div>
+      <div>5,00</div>
+    </div>
+  </div>
+
+  <div class="col"><div class="product-card"><img src="slike_izdelki/svezi_cili.jpg" class="img-fluid product-img" alt="Fresh Chilies"><div>Sveži čiliji</div><div>2,99</div></div></div>
+  <div class="col"><div class="product-card"><img src="slike_izdelki/cili_sambal.jpg" class="img-fluid product-img" alt="Chili Sambal"><div>Čili Sambal</div><div>3,75</div></div></div>
+  <div class="col"><div class="product-card"><img src="slike_izdelki/sirarcha_omaka.jpg" class="img-fluid product-img" alt="Sriracha"><div>Sriracha omaka</div><div>4,49</div></div></div>
+  <div class="col"><div class="product-card"><img src="slike_izdelki/cili_cokolada.jpg" class="img-fluid product-img" alt="Chili Chocolate"><div>Čili čokolada</div><div>6,00</div></div></div>
+  <div class="col"><div class="product-card"><img src="slike_izdelki/cili_v_prahu.jpg" class="img-fluid product-img" alt="Chili Flakes"><div>Posušen čili</div><div>2,20</div></div></div>
+</div>
+
+<div class="text-center mt-4">
+  <nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čili Raj</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .product-card {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      height: 100%;
+    }
+    .product-img {
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    @media (max-width: 576px) {
+      .header-icons {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .product-img {
+        max-height: 80px;
+      }
+
+      .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container-fluid bg-danger text-white py-3">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="čili_raj_logo.png" alt="LOGO" class="img-fluid">
+        <span class="fw-bold">Čili Raj</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 header-icons">
+        <input type="text" placeholder="Išči" class="form-control form-control-sm">
+        <button class="btn btn-outline-light btn-sm rounded"><i class="bi bi-person"></i></button>
+        <button class="btn btn-outline-light btn-sm rounded"><i class="bi bi-basket3"></i></button>
+        <button class="btn btn-outline-light btn-sm rounded navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarChili">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse bg-danger text-white text-center mt-2" id="navbarChili">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active text-white" href="#">Domov</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Izdelki</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">O nas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Product Grid -->
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <!-- Repeatable Product Card -->
+      <div class="col"><div class="product-card"><img src="slike_izdelki/cili_pekoca_omaka.jpg" class="img-fluid product-img" alt="Chili Sauce"><div>Pekoča omaka</div><div>3,99 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/cili_v_prahu.jpg" class="img-fluid product-img" alt="Chili Powder"><div>Čili v prahu</div><div>2,49 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/posusen_cili.jpg" class="img-fluid product-img" alt="Dried Chili"><div>Posušen čili</div><div>4,00 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/vlozen_cili.jpg" class="img-fluid product-img" alt="Pickled Chilies"><div>Vloženi čili</div><div>3,25 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/cili_olje.jpg" class="img-fluid product-img" alt="Chili Oil"><div>Čili olje</div><div>5,00 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/svezi_cili.jpg" class="img-fluid product-img" alt="Fresh Chilies"><div>Sveži čiliji</div><div>2,99 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/cili_sambal.jpg" class="img-fluid product-img" alt="Chili Sambal"><div>Čili Sambal</div><div>3,75 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/sirarcha_omaka.jpg" class="img-fluid product-img" alt="Sriracha"><div>Sriracha omaka</div><div>4,49 €</div></div></div>
+      <div class="col"><div class="product-card"><img src="slike_izdelki/cili_cokolada.jpg" class="img-fluid product-img" alt="Chili Chocolate"><div>Čili čokolada</div><div>6,00 €</div></div></div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="text-center mt-4">
+      <nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
