@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-input")
     const searchButton = document.getElementById("search-button")
@@ -57,6 +58,7 @@ searchButton.addEventListener('click', () => {
 
 
 
+
 function profil() {
     window.location.href = "profile.html";
 }
@@ -67,6 +69,7 @@ function kosarica() {
 
 function domov() {
     window.location.href = "HOMEPAGE.html";
+
 }
 
  
