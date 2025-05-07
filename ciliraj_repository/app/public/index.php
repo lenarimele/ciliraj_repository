@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čili Raj</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="koda.js"></script>
+</head>
+<body>
+<!-- glava -->
+<header class="container-fluid bg-danger text-white py-3 ">
+  <div class="d-flex justify-content-between align-items-center">
+    <img src="čiliraj slikovni.png" alt="LOGO" class="img-fluid me-3" href="HOMEPAGE.HTML" style="height: 60px;">
+    <div class="d-flex align-items-center gap-3">
+
+
+
+      <form class="navbar-form">
+        <div class="form-group">
+          <input type="text" placeholder="Išči" class="form-control" id="search-input">
+          
+        </div>
+      </form>
+        <button type="submit" class="btn btn-outline-light btn-sm rounded" id="search-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </button>
+
+
+      <button class="btn btn-outline-light btn-sm rounded" onclick = profil()>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>
+      </button>
+
+      <button class="btn btn-outline-light btn-sm rounded" onclick = kosarica()>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+          <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6z"/>
+        </svg>
+      </button>
+
+      <button class="btn btn-outline-light btn-sm rounded navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarChili">
+        <span class="navbar-toggler-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+<div class="collapse navbar-collapse bg-danger text-white text-center" id="navbarChili">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link active" href="HOMEPAGE.HTML">Domov</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="izdelki.html">Izdelki</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="galerija.html">O nas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="HOMEPAGE.html#kontakt">Kontakt</a>
+    </li>
+  </ul>
+</div>
+
+</div>
+</nav>
+
+</header>
+  
+
+
+  <!-- banner -->
+  <section class="position-relative text-center text-white">
+    <img src="https://img.freepik.com/free-photo/dried-red-chilli-background_1150-35719.jpg?semt=ais_country_boost&w=740" 
+         alt="Chili Background" class="opacity-75 img-fluid w-100" style="height: 300px; object-fit: cover;">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="fw-bold display-3">SUPER HOT PONUDBA</div>
+      <a href="izdelki.html" class="btn btn-danger mt-3">POGLEJ SI</a>
+    </div>
+  </section>
+
+  <!-- najbolje prodajani -->
+  <section class="text-center py-5">
+    <div class="display-6 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+      TRENUTNO NAJBOLJ PRODAJANO
+    </div>
+  
+    <div id="productCarousel" class="carousel slide mt-4  mx-auto" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="width: 18rem;">
+            <div class="card-body text-center">
+              <img src="https://fattalonline.com/cdn/shop/products/173469.png?v=1678998059" class="img-fluid" style="height: 130px;" alt="Hot Sauce">
+            </div>
+            <div class="card-footer fw-bold">
+              <div>HOT SAUCE</div>
+              <div>8,50€</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card mx-auto" style="width: 18rem;">
+            <div class="card-body text-center">
+              <img src="čili olje.png" class="img-fluid" style="height: 130px;" alt="Čili olje">
+            </div>
+            <div class="card-footer fw-bold">
+              <div>ČILI OLJE</div>
+              <div>6,90€</div>
+            </div>
+          </div>
+        </div>
+  
+
+      </div>
+  
+      <!-- Leva puščica -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Prejšnji</span>
+      </button>
+  
+      <!-- Desna puščica -->
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Naslednji</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Chili čokolada -->
+  <section class="text-center py-3">
+    <div class="fw-bold display-5" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">GALERIJA IZDELAVE</div>
+    <div class="text-muted">Poglej slike naše kmetije in pridelovanja!</div>
+    <div class="position-relative mt-4 container-flex">
+      <img src="https://foodal.com/wp-content/uploads/2021/12/Chili-Pepper-Chocolate-Bark-Recipe.jpg" 
+           alt="Chili Chocolate" class="img-fluid w-100">
+      <a href="galerija.html" class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white fw-bold fs-4 text-decoration-none">POGLEJ</a>
+    </div>
+  </section>
+
+  <!-- lokacije -->
+  <section class="text-center py-5">
+    <div class="fw-bold display-6">Kje nas lahko najdete?</div>
+    <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+      <img src="https://download.logo.wine/logo/SPAR_(retailer)/SPAR_(retailer)-Logo.wine.png" alt="Spar" class="img-fluid" style="height: 50px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbFe-9TXionSdyWzXu_3qZptqc9sSFRCKyw&s" alt="Mercator" class="img-fluid" style="height: 50px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgC-92FtWKASMVaLXsJYDMtq7BzhGFrTPtVw&s" alt="Tuš" class="img-fluid" style="height: 50px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lidl-Logo.svg/1200px-Lidl-Logo.svg.png" alt="Lidl" class="img-fluid" style="height: 50px;">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-danger text-white text-center py-5">
+    <div class="fw-bold display-6">Kreditne kartice</div>
+    <div class="d-flex justify-content-center gap-4 my-3 flex-wrap">
+      <img src="https://play-lh.googleusercontent.com/XuD8oS2M4OfU_8cwp-a01P5KLjEIHgc7j11Bw9O2wNPQT27nTGW-0wSd68s1ZclyMsB0" alt="Visa" class="img-fluid" style="height: 40px;">
+      <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard" class="img-fluid" style="height: 40px;">
+      <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2023/09/PayPal_Logo_2014.png" alt="PayPal" class="img-fluid" style="height: 40px;">
+    </div>
+
+    <div class="fw-bold mt-4 display-6">Kontakt</div>
+    <p id="kontakt">📞 +40666999</p>
+    <p>📧 kontakt.center@ciliraj.si</p>
+    <p>📍 Cesta k tamu, 2000, Maribor</p>
+  </footer>
+
+</body>
+</html>
