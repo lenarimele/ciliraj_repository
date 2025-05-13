@@ -1,4 +1,4 @@
-<?php
+
 <!DOCTYPE html>
 <html lang="sl">
 <head>
@@ -130,4 +130,4 @@
 </body>
 
 </html>
-?>
+
