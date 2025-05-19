@@ -90,20 +90,20 @@
           <div class="card-body">
             <h4 class="text-center mb-4">Nadaljuj z nakupom</h4>
   
-            <form>
-              <input type="email" class="form-control mb-3" placeholder="e-Mail" required>
-              <input type="text" class="form-control mb-3" placeholder="Ime" required>
-              <input type="text" class="form-control mb-3" placeholder="Priimek" required>
-              <input type="text" class="form-control mb-3" placeholder="Naziv podjetja">
-              <input type="text" class="form-control mb-3" placeholder="DDV">
-              <input type="text" class="form-control mb-3" placeholder="Naslov" required>
+            <form action="izpis.php" method="POST">
+              <input type="email" id="email" name="email"class="form-control mb-3" placeholder="e-Mail" required>
+              <input type="text" id="ime" name="ime" class="form-control mb-3" placeholder="Ime" required>
+              <input type="text" id="priimek" name="priimek" class="form-control mb-3" placeholder="Priimek" required>
+              <input type="text" id="naziv_podjetja" name="naziv_podjetja" class="form-control mb-3" placeholder="Naziv podjetja">
+              <input type="text" id="ddv" name="ddv" class="form-control mb-3" placeholder="DDV">
+              <input type="text" id="naslov" name="naslov" class="form-control mb-3" placeholder="Naslov" required>
   
               <div class="row mb-3">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Poštna številka" required>
+                  <input type="text" id="postna_stevilka" name="postna_stevilka" class="form-control" placeholder="Poštna številka" required>
                 </div>
                 <div class="col-sm-6 mt-3 mt-sm-0">
-                  <input type="text" class="form-control" placeholder="Kraj" required>
+                  <input type="text" id="kraj" name="kraj" class="form-control" placeholder="Kraj" required>
                 </div>
               </div>
   
@@ -116,7 +116,7 @@
                   </select>
                 </div>
                 <div class="col-sm-8 mt-3 mt-sm-0">
-                  <input type="tel" class="form-control" placeholder="Telefonska številka" required>
+                  <input type="tel" id="telefonska_stevilka" name="telefonska_stevilka" class="form-control" placeholder="Telefonska številka" required>
                 </div>
               </div>
   

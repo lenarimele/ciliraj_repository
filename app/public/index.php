@@ -86,7 +86,7 @@
          alt="Chili Background" class="opacity-75 img-fluid w-100" style="height: 300px; object-fit: cover;">
     <div class="position-absolute top-50 start-50 translate-middle">
       <div class="fw-bold display-3">SUPER HOT PONUDBA</div>
-      <a href="izdelki.html" class="btn btn-danger mt-3">POGLEJ SI</a>
+      <a href="izdelki.php" class="btn btn-danger mt-3">POGLEJ SI</a>
     </div>
   </section>
 
@@ -147,7 +147,7 @@
     <div class="position-relative mt-4 container-flex">
       <img src="https://foodal.com/wp-content/uploads/2021/12/Chili-Pepper-Chocolate-Bark-Recipe.jpg" 
            alt="Chili Chocolate" class="img-fluid w-100">
-      <a href="galerija.html" class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white fw-bold fs-4 text-decoration-none">POGLEJ</a>
+      <a href="galerija.php" class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 text-white fw-bold fs-4 text-decoration-none">POGLEJ</a>
     </div>
   </section>
 

@@ -127,7 +127,7 @@
             </div>
   
             <div class="d-grid">
-              <button class="btn btn-dark mt-3 btn-final">Na blagajno</button>
+              <button class="btn btn-dark mt-3 btn-final" onclick=placilo()>Na blagajno</button>
             </div>
           </div>
         </div>

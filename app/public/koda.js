@@ -72,4 +72,14 @@ function domov() {
 
 }
 
+function placilo() {
+  window.location.href = "način plačila.php";
+
+}
+
+function obrazec() {
+  window.location.href = "nakupovanje.php";
+
+}
+
  

@@ -11,7 +11,21 @@
   <script src="koda.js"></script>
 </head>
 <body>
-  <!-- glava -->
+
+<?php 
+        $email = $_REQUEST["email"];
+        $ime = $_REQUEST["ime"];
+        $priimek = $_REQUEST["priimek"];
+        $naziv_podjetja = $_REQUEST["naziv_podjetja"];
+        $ddv = $_REQUEST["ddv"];
+        $naslov = $_REQUEST["naslov"];
+        $kraj = $_REQUEST["kraj"];
+        $postna_stevilka = $_REQUEST["postna_stevilka"];
+        $telefonska_stevilka = $_REQUEST["telefonska_stevilka"];
+        
+    ?>
+
+<!-- glava -->
 <header class="container-fluid bg-danger text-white py-3 ">
   <div class="d-flex justify-content-between align-items-center">
     <img src="čiliraj slikovni.png" alt="LOGO" class="img-fluid me-3" href="index.php" style="height: 60px;" onclick = domov()>
@@ -82,70 +96,50 @@
 
 </header>
 
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h4 class="text-center mb-4">Način plačila</h4>
+<table>
+        <tr>
+            <td>e-Mail: </td>
+            <td><?= $email ?></td> 
+        </tr>
+        <tr>
+            <td>Ime: </td>
+            <td><?= $ime ?></td> 
+        </tr>
+        <tr>
+            <td>Priimek: </td>
+            <td><?= $priimek ?></td> 
+        </tr>
+        <tr>
+            <td>Naziv podjetja: </td>
+            <td><?= $naziv_podjetja ?></td> 
+        </tr>
+        <tr>
+            <td>DDV: </td>
+            <td><?= $ddv ?></td> 
+        </tr>
+        <tr>
+            <td>Naslov: </td>
+            <td><?= $naslov ?></td> 
+        </tr>
+        <tr>
+            <td>Kraj: </td>
+            <td><?= $kraj ?></td> 
+        </tr>
+        <tr>
+            <td>Poštna številka: </td>
+            <td><?= $postna_stevilka ?></td> 
+        </tr>
+        <tr>
+            <td>Telefonska številka: </td>
+            <td><?= $telefonska_stevilka ?></td> 
+        </tr>
+    </table>
   
-            <!-- Payment Options -->
-            <h5 class="mt-4">Način plačila</h5>
-            <form>
-              <div class="form-check my-2">
-                <input class="form-check-input" type="radio" name="payment" id="paypal" checked>
-                <label class="form-check-label d-flex align-items-center gap-2" for="paypal">
-                  Paypal
-                  <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" style="height: 24px;">
-                </label>
-              </div>
-              <div class="form-check my-2">
-                <input class="form-check-input" type="radio" name="payment" id="card">
-                <label class="form-check-label d-flex align-items-center gap-2" for="card">
-                  Plačilo s kartico
-                  <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" style="height: 24px;">
-                  <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" style="height: 24px;">
-                </label>
-              </div>
-              <div class="form-check my-2">
-                <input class="form-check-input" type="radio" name="payment" id="cod">
-                <label class="form-check-label d-flex justify-content-between w-100" for="cod">
-                  <span>Po povzetju</span> <span>1,00€</span>
-                </label>
-              </div>
-            </form>
-  
-            <!-- Order Summary -->
-            <div class="total-box mt-4">
-              <div class="d-flex justify-content-between">
-                <span>Cena blaga</span>
-                <span>0,00€</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>Dostava</span>
-                <span>Brezplačno</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>Plačilo</span>
-                <span>Brezplačno</span>
-              </div>
-              <hr />
-              <div class="d-flex justify-content-between fw-bold">
-                <span>Skupna cena z DDV</span>
-                <span>0,00€</span>
-              </div>
-            </div>
-  
-            <!-- Submit Button -->
-            <div class="d-grid mt-3">
-              <button type="submit" class="btn btn-dark btn-final" onclick=obrazec()>Zaključi nakup</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+
+
+
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
