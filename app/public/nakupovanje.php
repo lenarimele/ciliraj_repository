@@ -1,4 +1,4 @@
-<?php
+
 <!DOCTYPE html>
 <html lang="sl">
 
@@ -143,4 +143,3 @@
 </body>
 
 </html>
-?>

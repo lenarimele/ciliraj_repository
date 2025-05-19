@@ -64,16 +64,16 @@
 <div class="collapse navbar-collapse bg-danger text-white text-center" id="navbarChili">
   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
     <li class="nav-item">
-      <a class="nav-link active" href="HOMEPAGE.HTML">Domov</a>
+      <a class="nav-link active" href="index.php">Domov</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="izdelki.html">Izdelki</a>
+      <a class="nav-link" href="izdelki.php">Izdelki</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="galerija.html">O nas</a>
+      <a class="nav-link" href="galerija.php">O nas</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="HOMEPAGE.html#kontakt">Kontakt</a>
+      <a class="nav-link" href="index.php#kontakt">Kontakt</a>
     </li>
   </ul>
 </div>
