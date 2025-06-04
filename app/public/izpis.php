@@ -135,9 +135,12 @@
         </tr>
     </table>
   
-
-
-
+    <?php if($_SERVER['REQUEST_METHOD']==='POST'){
+        include 'vstavljanje_baza.php';
+    }
+    ?>
+    
+ <?php include 'izpis_baze.php' ?>
 
 
 

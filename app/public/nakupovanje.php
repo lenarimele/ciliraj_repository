@@ -95,12 +95,12 @@
               <input type="text" id="ime" name="ime" class="form-control mb-3" placeholder="Ime" required>
               <input type="text" id="priimek" name="priimek" class="form-control mb-3" placeholder="Priimek" required>
               <input type="text" id="naziv_podjetja" name="naziv_podjetja" class="form-control mb-3" placeholder="Naziv podjetja">
-              <input type="text" id="ddv" name="ddv" class="form-control mb-3" placeholder="DDV">
+              <input type="number" id="ddv" name="ddv" class="form-control mb-3" placeholder="DDV">
               <input type="text" id="naslov" name="naslov" class="form-control mb-3" placeholder="Naslov" required>
   
               <div class="row mb-3">
                 <div class="col-sm-6">
-                  <input type="text" id="postna_stevilka" name="postna_stevilka" class="form-control" placeholder="Poštna številka" required>
+                  <input type="number" id="postna_stevilka" name="postna_stevilka" class="form-control" placeholder="Poštna številka" required>
                 </div>
                 <div class="col-sm-6 mt-3 mt-sm-0">
                   <input type="text" id="kraj" name="kraj" class="form-control" placeholder="Kraj" required>
@@ -121,7 +121,7 @@
               </div>
   
               <div class="d-grid">
-                <button type="submit" class="btn btn-dark mt-3 btn-final">Zaključi nakup</button>
+                <button type="submit" name="ZakljuciNakup" class="btn btn-dark mt-3 btn-final">Zaključi nakup</button>
               </div>
             </form>
   
